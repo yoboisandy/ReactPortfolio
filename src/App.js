@@ -1,9 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold text-red-500 underline">Hello world!</h1>
+    <div className="bg-gray-800">
+      <Navbar />
+      <Footer />
+    </div>
   );
 }
 
