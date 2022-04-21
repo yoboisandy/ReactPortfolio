@@ -3,7 +3,17 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div id="about" className="px-8 lg:px-24  pt-12 ">
+      <div className="md:hidden flex justify-center mt-12">
+        <div className="w-60 h-80 rounded-2xl">
+          <img
+            src="images/pic.jpg"
+            className="w-60 h-80 rounded-2xl object-cover"
+            alt
+          />
+        </div>
+      </div>
+
+      <div id="about" className="px-8 lg:px-24  pt-8 ">
         <div className="py-4 md:px-8 px-4 md:flex lg:space-x-24 md:space-x-12 text-gray-200">
           <div className="left-about md:w-1/3 md:block hidden">
             <img

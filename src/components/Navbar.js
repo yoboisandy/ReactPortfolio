@@ -22,8 +22,8 @@ const Navbar = () => {
         <nav
           id="navbar"
           className={`md:flex-row ${
-            navBg ? "bg-gray-800" : ""
-          } z-20 transition-all delay-75 fixed top-0 right-0 left-0  mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14`}
+            navBg ? "bg-gray-800 bg-opacity-90 shadow-lg" : ""
+          } z-20 transition-all delay-75 fixed top-0 right-0 left-0   mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14`}
         >
           <div className="logo flex items-center">
             <a
