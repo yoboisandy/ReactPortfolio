@@ -15,7 +15,15 @@ const Hero = () => {
             <p className="text-xl font-light py-4">
               <Typical
                 loop={Infinity}
-                steps={["A Web Developer", 1000, "A Learner", 1000]}
+                wrapper="p"
+                steps={[
+                  "A Web Developer",
+                  2000,
+                  "A Learner",
+                  2000,
+                  "A Student",
+                  2000,
+                ]}
               />
             </p>
             <div className="flex pt-5 space-x-10">

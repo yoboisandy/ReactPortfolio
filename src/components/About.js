@@ -40,12 +40,12 @@ const About = () => {
               <p className="border-b-4 w-16 md:mx-0 mx-auto  border-purple-700" />
             </div>
             <p className="pb-8 text-justify">
-              Hi I am Sandeep and I’m passionate about everything related to IT.
-              Currently, I am an 5th semester student of BCA (Bachelor of
-              Computer Applications). I love web development. I genuinely love
-              to learn much more about it. I’m currently looking for right
-              opportunity to work on an environment that will help me progress
-              into a full-stack development.
+              Hi I am Sandeep, a sixth semester student of BCA (Bachelor of
+              Computer Applications). I love web development and I am seeking a
+              position with a growing organization where I can learn and make a
+              positive impact. I am eager to apply my knowledge and skills
+              towards launching a successful career as a fullstack PHP/Laravel
+              developer
             </p>
             <div>
               <a

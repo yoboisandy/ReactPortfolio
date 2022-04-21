@@ -16,6 +16,11 @@ const Navbar = () => {
     }
   };
 
+  const navigateTo = (e, id) => {
+    e.preventDefault();
+    document.getElementById(id).scrollIntoView();
+  };
+
   window.addEventListener("scroll", changeNavBg);
 
   return (
@@ -33,7 +38,7 @@ const Navbar = () => {
         >
           <div className="logo flex items-center">
             <a
-              href="#"
+              onClick={(e) => navigateTo(e, "hero")}
               className={`${
                 !darkMode
                   ? navBg
@@ -55,32 +60,32 @@ const Navbar = () => {
             } md:flex hidden   justify-center items-center space-x-8`}
           >
             <a
-              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
-              href="/#hero"
+              className={`font-semibold cursor-pointer hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
+              onClick={(e) => navigateTo(e, "hero")}
             >
               Home
             </a>
             <a
-              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
-              href="/#about"
+              className={`font-semibold cursor-pointer hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
+              onClick={(e) => navigateTo(e, "about")}
             >
               About
             </a>
             <a
-              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
-              href="/#skills"
+              className={`font-semibold cursor-pointer hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
+              onClick={(e) => navigateTo(e, "skills")}
             >
               Skills
             </a>
             <a
-              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
-              href="/#work"
+              className={`font-semibold cursor-pointer hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
+              onClick={(e) => navigateTo(e, "work")}
             >
               Projects
             </a>
             <a
-              className=" text-white hover:bg-purple-800 bg-purple-700 px-6 font-semibold py-1 rounded border-b-4 transition-all border-transparent"
-              href="/#contact"
+              className=" text-white cursor-pointer hover:bg-purple-800 bg-purple-700 px-6 font-semibold py-1 rounded border-b-4 transition-all border-transparent"
+              onClick={(e) => navigateTo(e, "contact")}
             >
               Hire Me
             </a>
@@ -106,30 +111,35 @@ const Navbar = () => {
             <a
               className="links block hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
               href="/#hero"
+              onClick={(e) => navigateTo(e, "hero")}
             >
               Home
             </a>
             <a
               className="links block hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
               href="/#about"
+              onClick={(e) => navigateTo(e, "about")}
             >
               About
             </a>
             <a
               className="links block hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
               href="/#skills"
+              onClick={(e) => navigateTo(e, "skills")}
             >
               Skills
             </a>
             <a
               className="links block hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
               href="/#work"
+              onClick={(e) => navigateTo(e, "work")}
             >
               Projects
             </a>
             <a
               className="links block  text-white hover:bg-purple-800 bg-purple-700 px-6 font-semibold py-1 rounded"
               href="/#contact"
+              onClick={(e) => navigateTo(e, "contact")}
             >
               Hire Me
             </a>

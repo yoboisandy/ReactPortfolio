@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import emailjs from "emailjs-com";
 import DarkModeContext from "../context/DarkModeContext";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [darkMode] = useContext(DarkModeContext);
@@ -14,10 +16,30 @@ const Contact = () => {
         "ALK-FlzxOS0FDWnc7"
       )
       .then((res) => {
-        alert("Email Send Successfully");
+        toast.success("Email Sent Successfully!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: darkMode ? "light" : "dark",
+        });
+        const inputs = document.querySelectorAll("#name, #email, #message");
+        inputs.forEach((i) => {
+          i.value = "";
+        });
       })
       .catch((err) => {
-        alert("Failed to send email");
+        toast.error("Failed to send email", {
+          position: "bottom-left",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: darkMode ? "light" : "dark",
+        });
       });
   };
   return (
@@ -56,7 +78,11 @@ const Contact = () => {
                     id="name"
                     name="name"
                     type="text"
-                    className="w-full bg-gray-300 h-10  focus:border-2  focus:border-purple-700 rounded-md text-gray-600"
+                    className={`w-full ${
+                      !darkMode
+                        ? "bg-gray-200 text-gray-600"
+                        : "bg-gray-700 text-gray-200"
+                    } h-10  border border-purple-400  focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md `}
                   />
                 </div>
                 <div className="pb-6">
@@ -72,7 +98,11 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    className="w-full bg-gray-300 h-10  focus:border-2  focus:border-purple-700 rounded-md text-gray-600"
+                    className={`w-full ${
+                      !darkMode
+                        ? "bg-gray-200 text-gray-600"
+                        : "bg-gray-700 text-gray-200"
+                    } h-10  border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md text-gray-600`}
                   />
                 </div>
                 <div className="pb-6">
@@ -87,7 +117,11 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
-                    className="w-full bg-gray-300  resize-none   focus:border-2 focus:border-purple-700  rounded-md text-gray-600"
+                    className={`w-full ${
+                      !darkMode
+                        ? "bg-gray-200 text-gray-600"
+                        : "bg-gray-700 text-gray-200"
+                    }  resize-none  border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-200  rounded-md `}
                     cols={30}
                     rows={4}
                     defaultValue={""}
@@ -106,6 +140,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
