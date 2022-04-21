@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [navBg, setNavBg] = useState(false);
+  const toggleSidebar = (e) => {
+    document.querySelector("#sidebar").classList.toggle("hidden");
+  };
+
+  const changeNavBg = () => {
+    if (window.scrollY > 30) {
+      setNavBg(true);
+    } else {
+      setNavBg(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavBg);
+
   return (
     <>
       <div>
         <nav
           id="navbar"
-          className="md:flex-row z-20 transition-all fixed top-0 right-0 left-0 container mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14"
+          className={`md:flex-row ${
+            navBg ? "bg-gray-800" : ""
+          } z-20 transition-all delay-75 fixed top-0 right-0 left-0  mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14`}
         >
           <div className="logo flex items-center">
             <a
@@ -48,7 +65,10 @@ const Navbar = () => {
               Hire Me
             </a>
           </div>
-          <button className="md:hidden flex justify-center items-center cursor-pointer z-20 ham">
+          <button
+            onClick={toggleSidebar}
+            className="md:hidden flex justify-center items-center cursor-pointer z-20 ham"
+          >
             <svg
               fill="white"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +79,10 @@ const Navbar = () => {
               <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
             </svg>
           </button>
-          <div className="md:hidden z-0 w-1/3 h-screen bg-opacity-95 fixed top-0 right-0 bg-gray-700 hidden menu flex flex-col  justify-center items-center text-gray-300 py-4 space-y-10 ">
+          <div
+            id="sidebar"
+            className="md:hidden z-0 w-1/3 h-screen bg-opacity-95 fixed top-0 right-0 bg-gray-700  menu flex hidden flex-col  justify-center items-center text-gray-300 py-4 space-y-10 "
+          >
             <a
               className="links block hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
               href="/#hero"
