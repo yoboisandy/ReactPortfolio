@@ -38,8 +38,8 @@ const Works = () => {
           </div>
           <div className="flex justify-center text-justify pb-6">
             <p className={`${!darkMode ? "text-gray-800" : "text-gray-200"}`}>
-              I haven't done any projects for any company or any clients. But
-              I've built some projects which are shown below:
+              I haven't done any projects for companies or clients. But I've
+              built some projects which are mentioned below:
             </p>
           </div>
           {/* <div className="owl-carousel owl-theme py-4  space-x-4">

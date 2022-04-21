@@ -10,7 +10,7 @@ const About = () => {
           <img
             src="images/pic.jpg"
             className="w-60 h-80 rounded-2xl object-cover"
-            alt
+            alt="me"
           />
         </div>
       </div>
@@ -25,7 +25,7 @@ const About = () => {
             <img
               src="images/about1.svg"
               style={{ minWidth: "25vw", minHeight: "100%" }}
-              alt
+              alt="sandeep"
             />
           </div>
           <div className="right-about md:w-2/3 ">

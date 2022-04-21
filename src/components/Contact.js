@@ -127,7 +127,7 @@ const Contact = () => {
                     defaultValue={""}
                   />
                 </div>
-                <div className>
+                <div>
                   <button
                     type="submit"
                     className="w-full text-white bg-purple-700 hover:bg-purple-800 rounded-md text-xl py-2 font-bold"

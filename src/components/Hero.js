@@ -12,10 +12,9 @@ const Hero = () => {
             <p className="text-5xl">
               I am <span className="text-purple-700 font-bold">Sandeep</span>
             </p>
-            <p className="text-xl font-light py-4">
+            <div className="text-xl font-light py-4">
               <Typical
                 loop={Infinity}
-                wrapper="p"
                 steps={[
                   "A Web Developer",
                   2000,
@@ -25,7 +24,7 @@ const Hero = () => {
                   2000,
                 ]}
               />
-            </p>
+            </div>
             <div className="flex pt-5 space-x-10">
               <a
                 href="#work"
@@ -47,7 +46,7 @@ const Hero = () => {
             <img
               src="images/pic.jpg"
               className=" rounded-2xl object-cover relative  -top-6 right-6"
-              alt
+              alt="sandeep"
             />
           </div>
         </div>

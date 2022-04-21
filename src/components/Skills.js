@@ -17,14 +17,14 @@ const Skills = () => {
             </h1>
             <p className="border-b-4 w-16 mx-auto  border-purple-700" />
           </div>
-          <div className>
+          <div>
             <div className="py-4 grid md:grid-cols-3 content-center grid-cols-2 gap-y-8 justify-center">
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
                     src="images/skills/w3_html5-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -40,7 +40,7 @@ const Skills = () => {
                   <img
                     src="images/skills/w3_css-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -56,7 +56,7 @@ const Skills = () => {
                   <img
                     src="images/skills/javascript-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -72,7 +72,7 @@ const Skills = () => {
                   <img
                     src="images/skills/getbootstrap-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -88,7 +88,7 @@ const Skills = () => {
                   <img
                     src="images/skills/tailwindcss-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -101,7 +101,11 @@ const Skills = () => {
               </div>
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
-                  <img src="images/skills/react.svg" className="w-20" alt />
+                  <img
+                    src="images/skills/react.svg"
+                    className="w-20"
+                    alt="Skill"
+                  />
                 </div>
                 <div
                   className={`text-center md:text-xl text-sm font-semibold ${
@@ -113,7 +117,11 @@ const Skills = () => {
               </div>
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
-                  <img src="images/skills/php-icon.svg" className="w-20" alt />
+                  <img
+                    src="images/skills/php-icon.svg"
+                    className="w-20"
+                    alt="Skill"
+                  />
                 </div>
                 <div
                   className={`text-center md:text-xl text-sm font-semibold ${
@@ -128,7 +136,7 @@ const Skills = () => {
                   <img
                     src="images/skills/laravel-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -144,7 +152,7 @@ const Skills = () => {
                   <img
                     src="images/skills/wordpress-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div
@@ -160,7 +168,7 @@ const Skills = () => {
                   <img
                     src="images/skills/git-scm-icon.svg"
                     className="w-20"
-                    alt
+                    alt="Skill"
                   />
                 </div>
                 <div

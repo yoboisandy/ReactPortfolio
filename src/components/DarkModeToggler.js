@@ -13,7 +13,11 @@ const DarkModeToggler = () => {
   };
 
   return (
-    <div onClick={toggleMode} className="fixed bottom-6 right-6 z-50">
+    <div
+      title={darkMode ? "Turn On Dark Mode" : "Turn Off Dark Mode"}
+      onClick={toggleMode}
+      className="fixed bottom-6 right-6 z-50"
+    >
       {darkMode && (
         <svg
           stroke="currentColor"
