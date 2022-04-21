@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import DarkModeContext from "../context/DarkModeContext";
 
 const About = () => {
+  const [darkMode] = useContext(DarkModeContext);
   return (
-    <div>
-      <div className="md:hidden flex justify-center mt-12">
+    <div id="about">
+      <div className="md:hidden flex justify-center pt-12">
         <div className="w-60 h-80 rounded-2xl">
           <img
             src="images/pic.jpg"
@@ -13,8 +15,12 @@ const About = () => {
         </div>
       </div>
 
-      <div id="about" className="px-8 lg:px-24  pt-8 ">
-        <div className="py-4 md:px-8 px-4 md:flex lg:space-x-24 md:space-x-12 text-gray-200">
+      <div className="px-8 lg:px-24  md:pt-12">
+        <div
+          className={`py-4 md:px-8 px-4 md:flex lg:space-x-24 md:space-x-12 ${
+            !darkMode ? "text-gray-800" : "text-gray-200"
+          }`}
+        >
           <div className="left-about md:w-1/3 md:block hidden">
             <img
               src="images/about1.svg"
@@ -24,7 +30,11 @@ const About = () => {
           </div>
           <div className="right-about md:w-2/3 ">
             <div className="pb-4">
-              <h1 className="text-white md:text-left text-center  text-3xl font-bold pb-2">
+              <h1
+                className={`${
+                  !darkMode ? "text-gray-800" : "text-white"
+                } md:text-left text-center  text-3xl font-bold pb-2`}
+              >
                 About Me
               </h1>
               <p className="border-b-4 w-16 md:mx-0 mx-auto  border-purple-700" />

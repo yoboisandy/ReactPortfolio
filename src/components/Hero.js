@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from "react-typical";
 
 const Hero = () => {
   return (
@@ -9,9 +10,14 @@ const Hero = () => {
             <p className="font-bold text-2xl py-4">Hey</p>
             {/* <p class="w-20  border-b-4 border-purple-700"></p> */}
             <p className="text-5xl">
-              I am <span className="text-purple-700 font-bold">Sandeep </span>{" "}
+              I am <span className="text-purple-700 font-bold">Sandeep</span>
             </p>
-            <p className="text-xl font-light py-4">A Web Developer</p>
+            <p className="text-xl font-light py-4">
+              <Typical
+                loop={Infinity}
+                steps={["A Web Developer", 1000, "A Learner", 1000]}
+              />
+            </p>
             <div className="flex pt-5 space-x-10">
               <a
                 href="#work"

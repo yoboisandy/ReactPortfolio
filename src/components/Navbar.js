@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import DarkModeContext from "../context/DarkModeContext";
 
 const Navbar = () => {
   const [navBg, setNavBg] = useState(false);
+  const [darkMode] = useContext(DarkModeContext);
   const toggleSidebar = (e) => {
     document.querySelector("#sidebar").classList.toggle("hidden");
   };
@@ -22,38 +24,56 @@ const Navbar = () => {
         <nav
           id="navbar"
           className={`md:flex-row ${
-            navBg ? "bg-gray-800 bg-opacity-90 shadow-lg" : ""
-          } z-20 transition-all delay-75 fixed top-0 right-0 left-0   mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14`}
+            navBg
+              ? darkMode
+                ? "bg-gray-800 bg-opacity-90 shadow-lg "
+                : "bg-gray-100 bg-opacity-90 shadow-lg"
+              : ""
+          }   z-20  fixed top-0 right-0 left-0   mx-auto flex justify-between md:py-4 py-2 px-10  md:px-8 lg:px-14`}
         >
           <div className="logo flex items-center">
             <a
               href="#"
-              className="text-white font-medium text-2xl cursor-pointer border-b-4 transition-all border-transparent"
+              className={`${
+                !darkMode
+                  ? navBg
+                    ? "text-gray-800"
+                    : "text-white"
+                  : "text-white"
+              } font-medium text-2xl cursor-pointer border-b-4 transition-all border-transparent`}
             >
               Sandeep Sharma
             </a>
           </div>
-          <div className="md:flex hidden  text-gray-300 justify-center items-center space-x-8">
+          <div
+            className={`${
+              !darkMode
+                ? !navBg
+                  ? "text-gray-300"
+                  : "text-gray-800"
+                : "text-gray-300"
+            } md:flex hidden   justify-center items-center space-x-8`}
+          >
             <a
-              className="font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
+              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
               href="/#hero"
             >
               Home
             </a>
             <a
-              className="font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
+              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
               href="/#about"
             >
               About
             </a>
             <a
-              className="font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
+              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
               href="/#skills"
             >
               Skills
             </a>
             <a
-              className=" font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"
+              className={`font-semibold hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700`}
               href="/#work"
             >
               Projects
@@ -70,7 +90,7 @@ const Navbar = () => {
             className="md:hidden flex justify-center items-center cursor-pointer z-20 ham"
           >
             <svg
-              fill="white"
+              fill={`${!darkMode ? "black" : "white"}`}
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32px"
