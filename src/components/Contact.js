@@ -44,8 +44,8 @@ const Contact = () => {
   };
   return (
     <div>
-      <div id="contact" className="px-8 lg:px-24  py-20 ">
-        <div className=" md:py-4 px-8">
+      <div id="contact" className=" lg:px-24  py-20 ">
+        <div className=" md:py-4 px-4">
           <div className="pb-6 mx-auto">
             <h1
               className={`${

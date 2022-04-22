@@ -35,8 +35,8 @@ const Works = () => {
   ];
   return (
     <div>
-      <div id="work" className="px-8 lg:px-24  pt-12 ">
-        <div className=" md:py-4 px-8  text-gray-200">
+      <div id="work" className="lg:px-24  pt-12 ">
+        <div className=" md:py-4 px-4 text-gray-200">
           <div className="pb-4 mx-auto">
             <h1
               className={`${
@@ -85,11 +85,7 @@ const Works = () => {
           </Swiper> */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
             {works.map((project, index) => {
-              return (
-                // <SwiperSlide key={index}>
-                <WorkCard key={index} project={project} />
-                // </SwiperSlide>
-              );
+              return <WorkCard key={index} project={project} />;
             })}
           </div>
         </div>

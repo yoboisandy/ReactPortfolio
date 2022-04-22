@@ -5,8 +5,8 @@ const Skills = () => {
   const [darkMode] = useContext(DarkModeContext);
   return (
     <div>
-      <div id="skills" className="px-8 lg:px-24  pt-12 ">
-        <div className=" md:py-4 px-8  text-gray-200">
+      <div id="skills" className="lg:px-24  pt-12 ">
+        <div className=" md:py-4  text-gray-200">
           <div className="pb-4 mx-auto">
             <h1
               className={`${

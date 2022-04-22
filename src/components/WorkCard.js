@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import DarkModeContext from "../context/DarkModeContext";
 
-const WorkCard = (props) => {
+const WorkCard = ({ project }) => {
   const [darkMode] = useContext(DarkModeContext);
   return (
     <div>
@@ -12,17 +12,17 @@ const WorkCard = (props) => {
       >
         <div>
           <img
-            src={props.project.image}
+            src={project.image}
             className="h-72 object-cover object-top w-full"
             alt="works"
           />
         </div>
         <div
           title="Github Link"
-          className={`rounded-full shadow mx-auto relative bottom-8 h-16 w-16 bg-white`}
+          className={`rounded-full border-2 border-gray-400 shadow mx-auto relative bottom-8 h-16 w-16 bg-white`}
         >
           <a
-            href={props.project.link}
+            href={project.link}
             className="grid place-items-center place-content-center"
           >
             <img src="/images/github.png" className="h-16 w-16" alt="" />
@@ -33,10 +33,10 @@ const WorkCard = (props) => {
             !darkMode ? "text-gray-800" : "text-gray-100"
           } -mt-6 pb-6 py-3 font-bold px-3 text-center`}
         >
-          {props.project.name}
+          {project.name}
         </div>
         <div className="flex flex-wrap gap-3 mb-6 mx-2 justify-center">
-          {props.project.technologies.map((tech, index) => {
+          {project.technologies.map((tech, index) => {
             return (
               <span
                 key={index}

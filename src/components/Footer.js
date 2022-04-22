@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
           <a
             className="flex justify-center"
-            href="https://www.instagram.com/_sandeep_aka_msdian/"
+            href="https://www.instagram.com/sandeep_aka_msdian/"
             target="_blank"
           >
             <img

@@ -15,7 +15,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="px-8 lg:px-24  md:pt-12">
+      <div className="px-4 lg:px-24  md:pt-12">
         <div
           className={`py-4 md:px-8 px-4 md:flex lg:space-x-24 md:space-x-12 ${
             !darkMode ? "text-gray-800" : "text-gray-200"
