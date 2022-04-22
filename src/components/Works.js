@@ -83,7 +83,7 @@ const Works = () => {
               );
             })}
           </Swiper> */}
-          <div className="grid grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
             {works.map((project, index) => {
               return (
                 // <SwiperSlide key={index}>

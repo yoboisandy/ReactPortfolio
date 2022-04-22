@@ -18,6 +18,7 @@ const WorkCard = (props) => {
           />
         </div>
         <div
+          title="Github Link"
           className={`rounded-full shadow mx-auto relative bottom-8 h-16 w-16 bg-white`}
         >
           <a
@@ -34,7 +35,7 @@ const WorkCard = (props) => {
         >
           {props.project.name}
         </div>
-        <div className="flex gap-3 mb-6 justify-center">
+        <div className="flex flex-wrap gap-3 mb-6 mx-2 justify-center">
           {props.project.technologies.map((tech) => {
             return (
               <span
