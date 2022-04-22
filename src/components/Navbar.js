@@ -26,8 +26,8 @@ const Navbar = () => {
 
   const navigateTo = (e, id) => {
     e.preventDefault();
-    // document.querySelector("#sidebar").classList.add("hidden");
-    setShowBars(true);
+    document.querySelector("#sidebar").classList.toggle("right-0");
+    document.querySelector("#sidebar").classList.toggle("-right-full");
     document.getElementById(id).scrollIntoView();
   };
 
@@ -207,7 +207,7 @@ const Navbar = () => {
           </button>
           <div
             id="sidebar"
-            className="md:hidden z-0 w-1/2 -right-full  h-screen bg-opacity-95 fixed top-0 transition-all duration-200   bg-gray-700  menu flex  flex-col  justify-center items-center text-gray-300 py-4 space-y-10 "
+            className="md:hidden shadow-md z-0 w-1/2 -right-full  h-screen bg-opacity-95 fixed top-0 transition-all duration-500   bg-gray-700  menu flex  flex-col  justify-center items-center text-gray-300 py-4 space-y-10 "
           >
             <div
               className="links block  cursor-pointer hover:text-gray-100 border-b-4 transition-all border-transparent hover:border-purple-700"

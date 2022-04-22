@@ -87,7 +87,7 @@ const Works = () => {
             {works.map((project, index) => {
               return (
                 // <SwiperSlide key={index}>
-                <WorkCard project={project} />
+                <WorkCard key={index} project={project} />
                 // </SwiperSlide>
               );
             })}

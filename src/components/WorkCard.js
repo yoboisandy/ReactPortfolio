@@ -36,9 +36,10 @@ const WorkCard = (props) => {
           {props.project.name}
         </div>
         <div className="flex flex-wrap gap-3 mb-6 mx-2 justify-center">
-          {props.project.technologies.map((tech) => {
+          {props.project.technologies.map((tech, index) => {
             return (
               <span
+                key={index}
                 className={`p-2 tracking-wide rounded bg-purple-300 text-gray-800`}
               >
                 {tech}
