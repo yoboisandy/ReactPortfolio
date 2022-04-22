@@ -12,20 +12,24 @@ const Works = () => {
     {
       image: "/images/projects/hrs/hrs.PNG",
       name: "Hotel Reservation System",
+      technologies: ["HTML", "CSS", "Bootstrap", "JS", "PHP", "MySQL"],
       link: "https://github.com/yoboisandy/Hotel-Reservation-System",
     },
     {
       image: "/images/projects/newsportal/newsportal.PNG",
       name: "News Portal",
+      technologies: ["HTML", "CSS", "Bootstrap", "JS", "Laravel", "MySQL"],
       link: "https://gitlab.com/yoboisandy/blog-site",
     },
     {
       image: "/images/projects/gadgetstore/gadgetstore.PNG",
       name: "Online Gadget Store",
+      technologies: ["Wordpress", "Elementor", "WooCommerce"],
     },
     {
       image: "/images/projects/newsapp.PNG",
       name: "React JS News App",
+      technologies: ["HTML", "Tailwind CSS", "React JS", "News API"],
       link: "https://github.com/yoboisandy/ReactNewsApp",
     },
   ];
@@ -49,10 +53,7 @@ const Works = () => {
               built some projects which are mentioned below:
             </p>
           </div>
-          {/* <div className="owl-carousel owl-theme py-4  space-x-4">
-            <WorkCard />
-          </div> */}
-          <Swiper
+          {/* <Swiper
             slidesPerView={1}
             spaceBetween={10}
             loop={true}
@@ -81,10 +82,16 @@ const Works = () => {
                 </SwiperSlide>
               );
             })}
-            {/* <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide> */}
-          </Swiper>
+          </Swiper> */}
+          <div className="grid grid-cols-2 gap-12">
+            {works.map((project, index) => {
+              return (
+                // <SwiperSlide key={index}>
+                <WorkCard project={project} />
+                // </SwiperSlide>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

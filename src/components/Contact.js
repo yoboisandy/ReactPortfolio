@@ -44,7 +44,7 @@ const Contact = () => {
   };
   return (
     <div>
-      <div id="contact" className="px-8 lg:px-24  py-12 ">
+      <div id="contact" className="px-8 lg:px-24  py-20 ">
         <div className=" md:py-4 px-8">
           <div className="pb-6 mx-auto">
             <h1
@@ -82,7 +82,7 @@ const Contact = () => {
                       !darkMode
                         ? "bg-gray-200 text-gray-600"
                         : "bg-gray-700 text-gray-200"
-                    } h-10  border border-purple-400  focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md `}
+                    } h-10  px-3 py-1 border border-purple-400  focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md `}
                   />
                 </div>
                 <div className="pb-6">
@@ -102,7 +102,7 @@ const Contact = () => {
                       !darkMode
                         ? "bg-gray-200 text-gray-600"
                         : "bg-gray-700 text-gray-200"
-                    } h-10  border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md text-gray-600`}
+                    } h-10  px-3 py-1 border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-200 rounded-md `}
                   />
                 </div>
                 <div className="pb-6">
@@ -121,7 +121,7 @@ const Contact = () => {
                       !darkMode
                         ? "bg-gray-200 text-gray-600"
                         : "bg-gray-700 text-gray-200"
-                    }  resize-none  border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-200  rounded-md `}
+                    }  resize-none  border border-purple-400 focus:outline-none focus:ring-2 px-3 py-1 focus:ring-purple-200  rounded-md `}
                     cols={30}
                     rows={4}
                     defaultValue={""}
