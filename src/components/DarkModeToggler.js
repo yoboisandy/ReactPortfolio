@@ -14,7 +14,7 @@ const DarkModeToggler = () => {
 
   return (
     <div
-      title={darkMode ? "Turn On Dark Mode" : "Turn Off Dark Mode"}
+      title={darkMode ? "Turn Off Dark Mode" : "Turn on Dark Mode"}
       onClick={toggleMode}
       className="fixed bottom-6 right-6 z-50"
     >
