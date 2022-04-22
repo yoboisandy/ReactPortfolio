@@ -6,8 +6,8 @@ const WorkCard = ({ project }) => {
   return (
     <div>
       <div
-        className={`item hover:scale-105 hover:shadow-lg transition-all duration-150 ease-linear  shadow-md ${
-          !darkMode ? "bg-white" : "bg-gray-700"
+        className={`item  hover:scale-105 hover:shadow-lg transition-all duration-150 ease-linear  shadow-md ${
+          !darkMode ? "bg-white border-2 border-gray-300" : "bg-gray-700"
         } h-full overflow-hidden text-white rounded-lg`}
       >
         <div>
@@ -25,7 +25,11 @@ const WorkCard = ({ project }) => {
             href={project.link}
             className="grid place-items-center place-content-center"
           >
-            <img src="/images/github.png" className="h-16 w-16" alt="" />
+            <img
+              src="yoboisandy.github.io/images/github.png"
+              className="h-16 w-16"
+              alt=""
+            />
           </a>
         </div>
         <div

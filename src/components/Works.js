@@ -10,24 +10,24 @@ const Works = () => {
 
   const works = [
     {
-      image: "/images/projects/hrs/hrs.PNG",
+      image: "yoboisandy.github.io/images/projects/hrs/hrs.PNG",
       name: "Hotel Reservation System",
       technologies: ["HTML", "CSS", "Bootstrap", "JS", "PHP", "MySQL"],
       link: "https://github.com/yoboisandy/Hotel-Reservation-System",
     },
     {
-      image: "/images/projects/newsportal/newsportal.PNG",
+      image: "yoboisandy.github.io/images/projects/newsportal/newsportal.PNG",
       name: "News Portal",
       technologies: ["HTML", "CSS", "Bootstrap", "JS", "Laravel", "MySQL"],
       link: "https://gitlab.com/yoboisandy/blog-site",
     },
     {
-      image: "/images/projects/gadgetstore/gadgetstore.PNG",
+      image: "yoboisandy.github.io/images/projects/gadgetstore/gadgetstore.PNG",
       name: "Online Gadget Store",
       technologies: ["Wordpress", "Elementor", "WooCommerce"],
     },
     {
-      image: "/images/projects/newsapp.PNG",
+      image: "yoboisandy.github.io/images/projects/newsapp.PNG",
       name: "React JS News App",
       technologies: ["HTML", "Tailwind CSS", "React JS", "News API"],
       link: "https://github.com/yoboisandy/ReactNewsApp",
@@ -36,7 +36,7 @@ const Works = () => {
   return (
     <div>
       <div id="work" className="lg:px-24  pt-12 ">
-        <div className=" md:py-4 px-4 text-gray-200">
+        <div className=" md:py-4 px-6 text-gray-200">
           <div className="pb-4 mx-auto">
             <h1
               className={`${
