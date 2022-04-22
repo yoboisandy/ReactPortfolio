@@ -12,14 +12,21 @@ const Works = () => {
     {
       image: "/images/projects/hrs/hrs.PNG",
       name: "Hotel Reservation System",
+      link: "https://github.com/yoboisandy/Hotel-Reservation-System",
+    },
+    {
+      image: "/images/projects/newsportal/newsportal.PNG",
+      name: "News Portal",
+      link: "https://gitlab.com/yoboisandy/blog-site",
     },
     {
       image: "/images/projects/gadgetstore/gadgetstore.PNG",
       name: "Online Gadget Store",
     },
     {
-      image: "/images/projects/newsportal/newsportal.PNG",
-      name: "News Portal",
+      image: "/images/projects/newsapp.PNG",
+      name: "React JS News App",
+      link: "https://github.com/yoboisandy/ReactNewsApp",
     },
   ];
   return (
