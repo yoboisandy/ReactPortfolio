@@ -10,24 +10,28 @@ const Works = () => {
 
   const works = [
     {
-      image: "MyReactPortolio/images/projects/hrs/hrs.PNG",
+      image:
+        "https://yoboisandy.github.io/MyReactPortolio/images/projects/hrs/hrs.PNG",
       name: "Hotel Reservation System",
       technologies: ["HTML", "CSS", "Bootstrap", "JS", "PHP", "MySQL"],
       link: "https://github.com/yoboisandy/Hotel-Reservation-System",
     },
     {
-      image: "MyReactPortolio/images/projects/newsportal/newsportal.PNG",
+      image:
+        "https://yoboisandy.github.io/MyReactPortolio/images/projects/newsportal/newsportal.PNG",
       name: "News Portal",
       technologies: ["HTML", "CSS", "Bootstrap", "JS", "Laravel", "MySQL"],
       link: "https://gitlab.com/yoboisandy/blog-site",
     },
     {
-      image: "MyReactPortolio/images/projects/gadgetstore/gadgetstore.PNG",
+      image:
+        "https://yoboisandy.github.io/MyReactPortolio/images/projects/gadgetstore/gadgetstore.PNG",
       name: "Online Gadget Store",
       technologies: ["Wordpress", "Elementor", "WooCommerce"],
     },
     {
-      image: "MyReactPortolio/images/projects/newsapp.PNG",
+      image:
+        "https://yoboisandy.github.io/MyReactPortolio/images/projects/newsapp.PNG",
       name: "React JS News App",
       technologies: ["HTML", "Tailwind CSS", "React JS", "News API"],
       link: "https://github.com/yoboisandy/ReactNewsApp",

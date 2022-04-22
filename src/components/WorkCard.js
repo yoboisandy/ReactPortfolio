@@ -22,11 +22,12 @@ const WorkCard = ({ project }) => {
           className={`rounded-full border-2 border-gray-400 shadow mx-auto relative bottom-8 h-16 w-16 bg-white`}
         >
           <a
+            target={"_blank"}
             href={project.link}
             className="grid place-items-center place-content-center"
           >
             <img
-              src="MyReactPortolio/images/github.png"
+              src="https://yoboisandy.github.io/MyReactPortolio/images/github.png"
               className="h-16 w-16"
               alt=""
             />
