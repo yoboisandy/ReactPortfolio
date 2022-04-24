@@ -26,11 +26,7 @@ const WorkCard = ({ project }) => {
             href={project.link}
             className="grid place-items-center place-content-center"
           >
-            <img
-              src="https://yoboisandy.github.io/MyReactPortolio/images/github.png"
-              className="h-16 w-16"
-              alt=""
-            />
+            <img src="/images/github.png" className="h-16 w-16" alt="" />
           </a>
         </div>
         <div

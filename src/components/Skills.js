@@ -22,7 +22,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/w3_html5-icon.svg"
+                    src="/images/skills/w3_html5-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -38,7 +38,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/w3_css-icon.svg"
+                    src="/images/skills/w3_css-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -54,7 +54,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/javascript-icon.svg"
+                    src="/images/skills/javascript-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -70,7 +70,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/getbootstrap-icon.svg"
+                    src="/images/skills/getbootstrap-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -86,7 +86,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/tailwindcss-icon.svg"
+                    src="/images/skills/tailwindcss-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -102,7 +102,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/react.svg"
+                    src="/images/skills/react.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -118,7 +118,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/php-icon.svg"
+                    src="/images/skills/php-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -134,7 +134,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/laravel-icon.svg"
+                    src="/images/skills/laravel-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -150,7 +150,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/wordpress-icon.svg"
+                    src="/images/skills/wordpress-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />
@@ -166,7 +166,7 @@ const Skills = () => {
               <div className="w-1/3 justify-self-center">
                 <div className="py-2 flex justify-center">
                   <img
-                    src="https://yoboisandy.github.io/MyReactPortolio/images/skills/git-scm-icon.svg"
+                    src="/images/skills/git-scm-icon.svg"
                     className="w-20"
                     alt="Skill"
                   />

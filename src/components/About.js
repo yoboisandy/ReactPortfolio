@@ -8,7 +8,7 @@ const About = () => {
       <div className="md:hidden flex justify-center pt-12">
         <div className="w-60 h-80 rounded-2xl">
           <img
-            src="https://yoboisandy.github.io/MyReactPortolio/images/pic.jpg"
+            src="/images/pic.jpg"
             className="w-60 h-80 rounded-2xl object-cover"
             alt="me"
           />
@@ -23,7 +23,7 @@ const About = () => {
         >
           <div className="left-about md:w-1/3 md:block hidden">
             <img
-              src="https://yoboisandy.github.io/MyReactPortolio/images/about1.svg"
+              src="/images/about1.svg"
               style={{ minWidth: "25vw", minHeight: "100%" }}
               alt="sandeep"
             />

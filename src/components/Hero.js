@@ -44,7 +44,7 @@ const Hero = () => {
         <div className="left-part  hidden justify-center md:flex items-center right-5 w-1/2">
           <div className=" border-4 border-purple-700 w-80 h-80 rounded-2xl ">
             <img
-              src="https://yoboisandy.github.io/MyReactPortolio/images/pic.jpg"
+              src="/images/pic.jpg"
               className=" rounded-2xl object-cover relative  -top-6 right-6"
               alt="sandeep"
             />
