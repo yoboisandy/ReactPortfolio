@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import emailjs from "emailjs-com";
 import DarkModeContext from "../context/DarkModeContext";
 import { ToastContainer, toast } from "react-toastify";
@@ -6,41 +6,56 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [darkMode] = useContext(DarkModeContext);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_pujkcwr",
-        "template_r03sn2k",
-        e.target,
-        "ALK-FlzxOS0FDWnc7"
-      )
-      .then((res) => {
-        toast.success("Email Sent Successfully!", {
-          position: "top-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: darkMode ? "light" : "dark",
-        });
-        const inputs = document.querySelectorAll("#name, #email, #message");
-        inputs.forEach((i) => {
-          i.value = "";
-        });
-      })
-      .catch((err) => {
-        toast.error("Failed to send email", {
-          position: "bottom-left",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: darkMode ? "light" : "dark",
-        });
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      toast.error("All fields should be filled", {
+        position: "bottom-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: darkMode ? "light" : "dark",
       });
+    } else {
+      emailjs
+        .sendForm(
+          "service_pujkcwr",
+          "template_r03sn2k",
+          e.target,
+          "ALK-FlzxOS0FDWnc7"
+        )
+        .then((res) => {
+          toast.success("Email Sent Successfully!", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: darkMode ? "light" : "dark",
+          });
+          const inputs = document.querySelectorAll("#name, #email, #message");
+          inputs.forEach((i) => {
+            i.value = "";
+          });
+        })
+        .catch((err) => {
+          toast.error("Failed to send email", {
+            position: "bottom-left",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: darkMode ? "light" : "dark",
+          });
+        });
+    }
   };
   return (
     <div>
@@ -75,6 +90,7 @@ const Contact = () => {
                     Name
                   </label>
                   <input
+                    onChange={(e) => setName(e.target.value)}
                     id="name"
                     name="name"
                     type="text"
@@ -95,6 +111,7 @@ const Contact = () => {
                     Email
                   </label>
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     id="email"
                     name="email"
                     type="email"
@@ -115,6 +132,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
+                    onChange={(e) => setMessage(e.target.value)}
                     name="message"
                     id="message"
                     className={`w-full ${
