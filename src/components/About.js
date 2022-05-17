@@ -47,13 +47,26 @@ const About = () => {
               towards launching a successful career as a fullstack PHP/Laravel
               developer
             </p>
-            <div>
+            <div className="flex gap-5">
               <a
                 href="cv.pdf"
                 className="border-4 rounded text-white bg-purple-700 border-purple-700 px-6 py-2"
                 download
               >
                 Download CV
+              </a>
+              <a
+                href="tel:+9779865399577"
+                className="border-4 rounded transition-all  hover:text-white hover:bg-purple-700 font-semibold border-purple-700 px-6 py-2"
+                download
+              >
+                <i class="fa-solid fa-phone mr-2"></i>
+                {/* <img
+                  src="/images/phone-call.svg"
+                  className="inline mr-3"
+                  width={25}
+                /> */}
+                Call Me
               </a>
             </div>
           </div>

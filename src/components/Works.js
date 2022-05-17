@@ -32,6 +32,12 @@ const Works = () => {
       technologies: ["HTML", "Tailwind CSS", "React JS", "News API"],
       link: "https://github.com/yoboisandy/ReactNewsApp",
     },
+    {
+      image: "/images/projects/hms.PNG",
+      name: "Hotel Management System",
+      technologies: ["HTML", "Tailwind CSS", "React JS", "Laravel"],
+      link: "https://gitlab.com/yoboisandy/hms",
+    },
   ];
   return (
     <div>
@@ -83,7 +89,7 @@ const Works = () => {
               );
             })}
           </Swiper> */}
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center justify-center">
             {works.map((project, index) => {
               return <WorkCard key={index} project={project} />;
             })}

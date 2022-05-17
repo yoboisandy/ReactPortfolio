@@ -34,7 +34,7 @@ const Hero = () => {
               </a>
               <a
                 href="#contact"
-                className="border-4 transition-all  hover:text-white hover:bg-purple-700 border-purple-700 px-6 py-2"
+                className="border-4 rounded transition-all  hover:text-white hover:bg-purple-700 border-purple-700 px-6 py-2"
               >
                 Contact Me
               </a>
