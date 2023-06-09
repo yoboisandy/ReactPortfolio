@@ -50,12 +50,10 @@ const Footer = () => {
 						/>
 					</a>
 				</div>
-				<div>
-					<div>
-						Copyright © 2022{" "}
-						<b className="text-purple-500">Sandeep Sharma</b>. All
-						Rights Reserved
-					</div>
+				<div className="text-center">
+					Copyright © {new Date().getFullYear()}{" "}
+					<b className="text-purple-500">Sandeep Sharma</b>. All
+					Rights Reserved
 				</div>
 			</footer>
 		</div>

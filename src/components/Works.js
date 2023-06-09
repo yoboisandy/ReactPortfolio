@@ -40,63 +40,38 @@ const Works = () => {
     },
   ];
   return (
-    <div>
-      <div id="work" className="lg:px-24  pt-12 ">
-        <div className=" md:py-4 px-6 text-gray-200">
-          <div className="pb-4 mx-auto">
-            <h1
-              className={`${
-                !darkMode ? "text-gray-800" : "text-white"
-              } text-3xl text-center font-bold pb-2`}
-            >
-              My Works
-            </h1>
-            <p className="border-b-4 w-16 mx-auto  border-purple-700" />
-          </div>
-          <div className="flex justify-center text-justify pb-6">
-            <p className={`${!darkMode ? "text-gray-800" : "text-gray-200"}`}>
-              I haven't done any projects for companies or clients. But I've
-              built some projects which are mentioned below:
-            </p>
-          </div>
-          {/* <Swiper
-            slidesPerView={1}
-            spaceBetween={10}
-            loop={true}
-            breakpoints={{
-              640: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 2,
-              },
-            }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-          >
-            {works.map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <WorkCard project={project} />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper> */}
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center justify-center">
-            {works.map((project, index) => {
-              return <WorkCard key={index} project={project} />;
-            })}
-          </div>
-        </div>
-      </div>
-    </div>
+		<div>
+			<div id="work" className="lg:px-24  pt-12 ">
+				<div className=" md:py-4 px-6 text-gray-200">
+					<div className="pb-4 mx-auto">
+						<h1
+							className={`${
+								!darkMode ? "text-gray-800" : "text-white"
+							} text-3xl text-center font-bold pb-2`}
+						>
+							My Works
+						</h1>
+						<p className="border-b-4 w-16 mx-auto  border-purple-700" />
+					</div>
+					<div className="flex justify-center text-justify pb-6">
+						<p
+							className={`text-center lg:w-[70%] ${
+								!darkMode ? "text-gray-800" : "text-gray-200"
+							}`}
+						>
+							These are some of my personal projects that I have
+							independently developed to enhance my skills and
+							demonstrate my capabilities as a web developer.
+						</p>
+					</div>
+					<div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center justify-center">
+						{works.map((project, index) => {
+							return <WorkCard key={index} project={project} />;
+						})}
+					</div>
+				</div>
+			</div>
+		</div>
   );
 };
 
