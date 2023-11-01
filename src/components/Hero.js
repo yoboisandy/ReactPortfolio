@@ -14,10 +14,10 @@ const Hero = () => {
 				<div className="right-part text-white flex flex-col justify-center items-center md:w-1/2 w-full">
 					<div className=" py-5">
 						<p className="font-semibold text-2xl py-4">Hi</p>
-						{/* <p class="w-20  border-b-4 border-purple-700"></p> */}
+						{/* <p class="w-20  border-b-4 border-themeColor"></p> */}
 						<p className="text-5xl">
 							I am{" "}
-							<span className="text-purple-700 font-bold">
+							<span className="text-themeColor font-bold">
 								Sandeep
 							</span>
 						</p>
@@ -37,13 +37,13 @@ const Hero = () => {
 						<div className="flex pt-5 space-x-10">
 							<button
 								onClick={(e) => navigateTo(e, "work")}
-								className="border-4 rounded text-white bg-purple-700 border-purple-700 px-6 py-2"
+								className="border-4 rounded text-white bg-themeColor border-themeColor px-6 py-2"
 							>
 								Projects
 							</button>
 							<button
 								onClick={(e) => navigateTo(e, "contact")}
-								className="border-4 rounded transition-all  hover:text-white hover:bg-purple-700 border-purple-700 px-6 py-2"
+								className="border-4 rounded transition-all  hover:text-white hover:bg-themeColor border-themeColor px-6 py-2"
 							>
 								Contact Me
 							</button>
@@ -51,7 +51,7 @@ const Hero = () => {
 					</div>
 				</div>
 				<div className="left-part  hidden justify-center md:flex items-center right-5 w-1/2">
-					<div className=" border-4 border-purple-700 w-80 h-80 rounded-2xl ">
+					<div className=" border-4 border-themeColor w-80 h-80 rounded-2xl ">
 						<img
 							src="/images/pic.jpg"
 							className=" rounded-2xl object-cover relative  -top-6 right-6"

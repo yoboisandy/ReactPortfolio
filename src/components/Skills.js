@@ -15,7 +15,7 @@ const Skills = () => {
 						>
 							Skills
 						</h1>
-						<p className="border-b-4 w-16 mx-auto  border-purple-700" />
+						<p className="border-b-4 w-16 mx-auto  border-themeColor" />
 					</div>
 					<div>
 						<div className="py-4 grid md:grid-cols-3 content-center grid-cols-2 gap-y-8 justify-center">

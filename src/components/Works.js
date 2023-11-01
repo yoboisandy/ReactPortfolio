@@ -57,7 +57,7 @@ const Works = () => {
 						>
 							My Works
 						</h1>
-						<p className="border-b-4 w-16 mx-auto  border-purple-700" />
+						<p className="border-b-4 w-16 mx-auto  border-themeColor" />
 					</div>
 					<div className="flex justify-center text-justify pb-6">
 						<p

@@ -37,7 +37,7 @@ const About = () => {
 							>
 								About Me
 							</h1>
-							<p className="border-b-4 w-16 md:mx-0 mx-auto  border-purple-700" />
+							<p className="border-b-4 w-16 md:mx-0 mx-auto  border-themeColor" />
 						</div>
 						<p className="pb-8 text-justify">
 							Highly skilled PHP Laravel Developer with 2 years of
@@ -55,14 +55,14 @@ const About = () => {
 						<div className="flex gap-5">
 							<a
 								href="sandeep_resume.pdf"
-								className="border-4 rounded text-white bg-purple-700 border-purple-700 px-6 py-2"
+								className="border-4 rounded text-white bg-themeColor border-themeColor px-6 py-2"
 								download
 							>
 								Download CV
 							</a>
 							<a
 								href="tel:+9779865399577"
-								className="border-4 rounded transition-all  hover:text-white hover:bg-purple-700 font-semibold border-purple-700 px-6 py-2"
+								className="border-4 rounded transition-all  hover:text-white hover:bg-themeColor font-semibold border-themeColor px-6 py-2"
 								download
 							>
 								<i class="fa-solid fa-phone mr-2"></i>

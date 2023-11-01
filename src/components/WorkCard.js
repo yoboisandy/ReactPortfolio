@@ -47,7 +47,7 @@ const WorkCard = ({ project }) => {
 						return (
 							<span
 								key={index}
-								className={`p-2 tracking-wide rounded bg-purple-300 text-gray-800`}
+								className={`p-2 tracking-wide rounded bg-secThemeColor font-semibold text-gray-100`}
 							>
 								{tech}
 							</span>

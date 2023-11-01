@@ -52,7 +52,7 @@ const Footer = () => {
 				</div>
 				<div className="text-center">
 					Copyright © {new Date().getFullYear()}{" "}
-					<b className="text-purple-500">Sandeep Sharma</b>. All
+					<b className="text-themeColor">Sandeep Sharma</b>. All
 					Rights Reserved
 				</div>
 			</footer>
