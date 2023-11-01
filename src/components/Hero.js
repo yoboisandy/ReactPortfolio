@@ -13,7 +13,7 @@ const Hero = () => {
 			<header className="bg-cover h-screen flex" id="hero">
 				<div className="right-part text-white flex flex-col justify-center items-center md:w-1/2 w-full">
 					<div className=" py-5">
-						<p className="font-bold text-2xl py-4">Hey</p>
+						<p className="font-semibold text-2xl py-4">Hi</p>
 						{/* <p class="w-20  border-b-4 border-purple-700"></p> */}
 						<p className="text-5xl">
 							I am{" "}

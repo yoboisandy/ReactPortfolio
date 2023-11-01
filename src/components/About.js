@@ -41,8 +41,8 @@ const About = () => {
 						</div>
 						<p className="pb-8 text-justify">
 							Highly skilled PHP Laravel Developer with 2 years of
-							experience in designing, developing, testing,
-							andmaintaining web applications. Proficient in
+							experience in designing, developing, testing, and
+							maintaining web applications. Proficient in
 							utilizing the Laravel framework to create robust
 							andscalable solutions. Possesses a strong
 							understanding of software development principles,
